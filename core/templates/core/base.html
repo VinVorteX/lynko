@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>{% block title %}{% endblock %} | lynko</title>
+</head>
+<body>
+  <div>
+    <nav class=" flex p-6 items-center justify-between bg-gray-800">
+        <a href="#" class="py-4 px-6 text-xl text-cyan-500">lynko</a>
+
+        <div class="space-x-4">
+            <a href="#" class="text-white">About</a>
+            <a href="#" class="text-white">Pricing</a>
+
+            <a href="#" class="py-4 px-6 bg-cyan-600 text-white rounded-xl">Sign Up</a>
+            <a href="#" class="py-4 px-6 bg-teal-600 text-white rounded-xl">Log In</a>
+        </div>
+    </nav>
+
+    <main class="p-6">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="p-6 bg-gray-900">
+        <p class="text-xs text-gray-400">Copyright (c) 2023 - lynko</p>
+    </footer>
+  </div>
+</body>
+</html>
